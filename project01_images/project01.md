@@ -87,14 +87,16 @@
 
 *vitual host creation shown below in VIM*
 
-`<VirtualHost *:80>
+```
+<VirtualHost *:80>
     ServerName projectlamp
     ServerAlias www.projectlamp 
     ServerAdmin webmaster@localhost
     DocumentRoot /var/www/projectlamp
     ErrorLog ${APACHE_LOG_DIR}/error.log
     CustomLog ${APACHE_LOG_DIR}/access.log combined
-</VirtualHost>`
+</VirtualHost>
+```
 
 `sudo ls /etc/apache2/sites-available`
 
@@ -132,12 +134,14 @@
 
 *modification on the DirectoryIndex directive, commented our the default directive while leaving the modified one*
 
-`<IfModule mod_dir.c>
+```
+<IfModule mod_dir.c>
         #Change this:
         #DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.htm
         #To this:
         DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
-</IfModule>`
+</IfModule>
+```
 
 `sudo service apache2 reload`
 
@@ -146,6 +150,11 @@
 `vim /var/www/projectlamp/index.php`
 
 ![command and screen shot to new file named index.php inside the custom web root folder. The command actually open a VIM text editor where a valid php code is entered](EnphpWeb_step03.PNG)
+
+```
+<?php
+phpinfo();
+```
 
 *access the php page using the public IP address to confirm php installation was successful*
 ![screen shot confirming php installation](EnphpWeb_step03a.PNG)
