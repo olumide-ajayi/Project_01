@@ -23,21 +23,21 @@
 
 `curl http://localhost`
 
-![Test for Apache Server reachability locally without port number specified in the command](Apache_step03.PNG)
+![Test for Apache Server reachability locally without port number specified in the command](Apache_Step03.PNG)
 
 `curl http://localhost:80`
-![Test Apache Server reachability locally with port number specified in the command](Apache_step03a.PNG)
+![Test Apache Server reachability locally with port number specified in the command](Apache_Step03a.PNG)
 
 `curl http://127.0.0.1`
-![Test for Apache Server reachability locally while specifying localhost IP address without port number](Apache_step03b.PNG)
+![Test for Apache Server reachability locally while specifying localhost IP address without port number](Apache_Step03b.PNG)
 
 *Apached server reachable from internet using http://44.202.14.70 on a browser of another machine*
 
-![Screen shot of server reachable from internet using the public IP address gotten from EC2 instance](Apache_step04.PNG)
+![Screen shot of server reachable from internet using the public IP address gotten from EC2 instance](Apache_Step04.PNG)
 
 `curl -s http://169.254.169.254/latest/meta-data/public-ipv4`
 
-![command and Screen shot to retrieve public IP address of EC2 instance](Apache_step05.PNG)
+![command and Screen shot to retrieve public IP address of EC2 instance](Apache_Step05.PNG)
 
 ### MYSQL installation
 
